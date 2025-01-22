@@ -1,0 +1,23 @@
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "<input-your-password>"
+    ],
+    "ssl": {
+        "cert": "/home/trojan-go/1.pem",
+        "key": "/home/trojan-go/1.key",
+        "fallback_port": 443
+    },
+    "router": {
+        "enabled": true,
+        "block": [
+            "geoip:private"
+        ],
+        "geoip": "/home/trojan-go/geoip.dat",
+        "geosite": "/home/trojan-go/geosite.dat"
+    }
+}
